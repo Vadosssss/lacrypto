@@ -1,0 +1,37 @@
+.parent {
+    -fx-background-color: transparent  ;
+}
+.dark-panel{
+    -fx-background-color: #45515F;
+}
+.main-btns{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: transparent;
+
+}
+.main-btns:hover{
+    -fx-backgroud-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: #F3A978;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: transparent;
+
+}
+.text-area {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.buttons{
+      -fx-background-color: #596575;
+      -fx-background-radius: 0px;
+      -fx-text-fill: white;
+  }
+
+.buttons:hover{
+    -fx-background-color: #F3A970;
+    -fx-background-radius: 0px;
+    -fx-text-fill: white;
+}

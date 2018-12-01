@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="TwoStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane fx:id="stackPane2" prefHeight="358.0" prefWidth="435.0">
+         <children>
+            <AnchorPane fx:id="Mainlayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="686.0" styleClass="dark-panel" stylesheets="@stylesheet.css">
+               <children>
+                  <JFXTextArea fx:id="inDecrypt" focusColor="#f3a978" layoutX="14.0" layoutY="136.0" prefHeight="82.0" prefWidth="263.0" promptText="Enter string" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5">
+                     <font>
+                        <Font name="Constantia" size="14.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXTextArea fx:id="outDecrypt" focusColor="#f3a978" layoutX="14.0" layoutY="359.0" prefHeight="82.0" prefWidth="281.0" promptText="Output string" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5">
+                     <font>
+                        <Font name="Constantia" size="14.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="decrKey" focusColor="#f3a978" layoutX="14.0" layoutY="51.0" prefHeight="29.0" prefWidth="108.0" promptText="Key:" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5">
+                     <font>
+                        <Font name="Century" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="234.0" text="Enter your key" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="99.0" prefHeight="34.0" prefWidth="319.0" text="Enter your string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="91.0" layoutY="271.0" onMouseClicked="#Decrypt" prefHeight="51.0" prefWidth="110.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Decrypt" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="14.0" layoutY="234.0" prefHeight="37.0" prefWidth="385.0" text="Click button &quot;Decrypt&quot;" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="322.0" prefHeight="37.0" prefWidth="385.0" text="Dectypted string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="357.0" layoutY="14.0" prefHeight="37.0" prefWidth="321.0" text="Open file to decrypt string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="flChoose2" layoutX="478.0" layoutY="158.0" onMouseClicked="#choose__safeDirectory" prefHeight="39.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Save">
+                     <font>
+                        <Font name="Candara Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="357.0" layoutY="118.0" prefHeight="37.0" prefWidth="321.0" text="Save decrypted string to file" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="flChoose3" layoutX="478.0" layoutY="61.0" onMouseClicked="#choose_file" prefHeight="39.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Open">
+                     <font>
+                        <Font name="Candara Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

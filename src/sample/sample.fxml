@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="OneStack" prefHeight="462.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane fx:id="stackPane" prefHeight="358.0" prefWidth="435.0">
+         <children>
+            <AnchorPane fx:id="Mainlayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="686.0" styleClass="dark-panel" stylesheets="@stylesheet.css">
+               <children>
+                  <JFXTextArea fx:id="encryptField" focusColor="#f3a978" layoutX="23.0" layoutY="137.0" prefHeight="82.0" prefWidth="263.0" promptText="Enter string" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5">
+                     <font>
+                        <Font name="Monospaced Regular" size="14.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="Encryptkey" focusColor="#f3a978" layoutX="23.0" layoutY="61.0" prefHeight="29.0" prefWidth="108.0" promptText="Key" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="61.0">
+                     <font>
+                        <Font name="Century" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="116.0" layoutY="271.0" onMouseClicked="#Encrypt" prefHeight="51.0" prefWidth="96.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Encrypt">
+                     <font>
+                        <Font name="Candara Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="18.0" layoutY="14.0" prefHeight="37.0" prefWidth="226.0" text="Enter your key" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="100.0" prefHeight="37.0" prefWidth="263.0" text="Enter your string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="334.0" prefHeight="37.0" prefWidth="281.0" text="Encrypted string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="233.0" prefHeight="37.0" prefWidth="385.0" text="Click button &quot;Encrypt&quot;" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="flChoose" layoutX="483.0" layoutY="56.0" onMouseClicked="#choose_file" prefHeight="39.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Open">
+                     <font>
+                        <Font name="Candara Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="flChoose1" layoutX="483.0" layoutY="159.0" onMouseClicked="#choose__safeDirectory" prefHeight="39.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="buttons" stylesheets="@stylesheet.css" text="Save">
+                     <font>
+                        <Font name="Candara Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextArea fx:id="encryptOutput" focusColor="#f3a978" layoutX="23.0" layoutY="379.0" prefHeight="82.0" prefWidth="281.0" promptText="Output string" styleClass="text-area" stylesheets="@stylesheet.css" unFocusColor="#326fb5">
+                     <font>
+                        <Font name="Monospaced Regular" size="14.0" />
+                     </font>
+                  </JFXTextArea>
+                  <Label layoutX="362.0" layoutY="14.0" prefHeight="37.0" prefWidth="321.0" text="Open file to encrypt string" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="362.0" layoutY="119.0" prefHeight="37.0" prefWidth="321.0" text="Save encrypted string to file" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <MediaView fx:id="media" fitHeight="200.0" fitWidth="200.0" layoutX="423.0" layoutY="253.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>
